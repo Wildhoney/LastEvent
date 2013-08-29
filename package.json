@@ -1,0 +1,32 @@
+{
+  "name": "LastEvent",
+  "version": "0.0.1",
+  "description": "Upcoming musical events in your area using the Last.fm API.",
+  "main": "dist/index.html",
+  "dependencies": {
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wildhoney/LastEvent.git"
+  },
+  "keywords": [
+    "last.fm",
+    "events",
+    "concerts",
+    "local",
+    "music",
+    "artists"
+  ],
+  "author": "Adam Timberlake",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Wildhoney/LastEvent/issues"
+  }
+}
