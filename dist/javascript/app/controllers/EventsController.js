@@ -5,6 +5,6 @@ lastEvent.controller('EventsController', ['$scope', function MapController($scop
      * @type {Array}
      * @default []
      */
-    $scope.events = [];
+    $scope.events = [{}, {}, {}];
 
 }]);
