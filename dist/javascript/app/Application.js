@@ -1,0 +1,1 @@
+var lastEvent = angular.module('lastEventApp', []);

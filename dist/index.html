@@ -6,8 +6,15 @@
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript" src="./javascript/vendor/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./javascript/vendor/angular-1.0.7.js"></script>
+
+    <script type="text/javascript" src="./javascript/app/Application.js"></script>
+    <script type="text/javascript" src="./javascript/app/controllers/EventsController.js"></script>
+    <script type="text/javascript" src="./javascript/app/controllers/MapController.js"></script>
+
 </head>
-<body>
+<body ng-app="lastEventApp">
 
     <section class="sidebar">
 
@@ -17,12 +24,7 @@
 
         <ul class="events" ng-controller="EventsController">
 
-            <li>
-                <h3><a href="#">Royal Albert Hall</a></h3>
-                <span>Miandra Hall, Madrid</span>
-                <time>14th August, 2013</time>
-            </li>
-            <li>
+            <li ng-repeat="event in events">
                 <h3><a href="#">Royal Albert Hall</a></h3>
                 <span>Miandra Hall, Madrid</span>
                 <time>14th August, 2013</time>
