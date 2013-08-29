@@ -11,8 +11,10 @@ a {
   color: #dd4b39; }
 
 section.sidebar {
+  position: relative;
+  z-index: 3;
   background-color: white;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
   float: left;
   width: 25%;
   height: 100%; }
@@ -82,10 +84,32 @@ section.sidebar {
         text-overflow: ellipsis; }
 
 section.map {
+  position: relative;
+  z-index: 2;
   float: left;
   width: 75%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15); }
+  section.map map {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    float: left; }
+    section.map map .leaflet-control-zoom {
+      border-radius: 0;
+      margin: 0;
+      z-index: 5;
+      position: relative; }
+      section.map map .leaflet-control-zoom a {
+        float: left;
+        border-radius: 0;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+        border: 0;
+        background-color: #eee; }
+        section.map map .leaflet-control-zoom a:first-of-type {
+          border-right: 1px solid #ddd; }
   @media screen and (max-width: 550px) {
     section.map {
       height: 30%;

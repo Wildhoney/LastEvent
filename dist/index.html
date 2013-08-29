@@ -3,15 +3,18 @@
 <head>
 
     <title>LastEvent - Local Concerts via Last.fm</title>
+    <link rel="stylesheet" type="text/css" href="./css/leaflet-0.6.4.css" />
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="./javascript/vendor/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./javascript/vendor/leaflet-0.6.4.js"></script>
     <script type="text/javascript" src="./javascript/vendor/angular-1.0.7.js"></script>
 
     <script type="text/javascript" src="./javascript/app/Application.js"></script>
     <script type="text/javascript" src="./javascript/app/controllers/EventsController.js"></script>
     <script type="text/javascript" src="./javascript/app/controllers/MapController.js"></script>
+    <script type="text/javascript" src="./javascript/app/directives/Map.js"></script>
 
 </head>
 <body ng-app="lastEventApp">
@@ -35,6 +38,8 @@
     </section>
 
     <section class="map" ng-controller="MapController">
+
+        <map></map>
 
     </section>
 
