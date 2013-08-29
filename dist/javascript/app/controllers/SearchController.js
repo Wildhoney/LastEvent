@@ -1,18 +1,25 @@
-lastEvent.controller('SearchController', ['$scope', '$http', function MapController($scope, $http) {
+(function($w) {
 
-    /**
-     * @property place
-     * @type {Array}
-     * @default ''
-     */
-    $scope.place = '';
+    "use strict";
 
-    /**
-     * @method find
-     * @return {void}
-     */
-    $scope.find = function find(place) {
+    $w.lastEvent.controller('SearchController', ['$scope', '$http', function MapController($scope, $http) {
 
-    }
+        /**
+         * @property place
+         * @type {Array}
+         * @default ''
+         */
+        $scope.place = '';
 
-}]);
+        /**
+         * @method find
+         * @return {void}
+         */
+        $scope.find = function find(place) {
+            $http('api/backend', place);
+            return $scope.place;
+        }
+
+    }]);
+
+})(window);

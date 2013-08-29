@@ -1,19 +1,25 @@
-/**
- * @factory $lastEvent
- * @return {Object}
- */
-lastEvent.factory('$lastEvent', function() {
+(function($w) {
 
-    var factory = {};
+    "use strict";
 
     /**
-     * @method noop
-     * Do nothing!
+     * @factory $lastEvent
+     * @return {Object}
      */
-    factory.noop = function noop() {
+    $w.lastEvent.factory('$lastEvent', function() {
 
-    };
+        var factory = {};
 
-    return factory;
+        /**
+         * @method noop
+         * Do nothing!
+         */
+        factory.noop = function noop() {
 
-});
+        };
+
+        return factory;
+
+    });
+
+})(window);
